@@ -1,0 +1,18 @@
+{
+  "name": "jupyter-material",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "author": "Richie Bendall <richiebendall@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:js": "babel core -d dist",
+    "build:css": "node-sass core -o dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "node-sass": "^4.11.0"
+  }
+}

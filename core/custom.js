@@ -65,19 +65,16 @@ $("#tabs").replaceWith(`
 `)
 
 $("#site").append(`
-    <div class="mdc-dialog"
+    <div class="mdc-dialog jm-quit-dialog"
          role="alertdialog"
          aria-modal="true"
          aria-labelledby="my-dialog-title"
-         aria-describedby="my-dialog-content">
+         aria-describedby="my-dialog-content" data-mdc-auto-init="MDCDialog">
       <div class="mdc-dialog__container">
         <div class="mdc-dialog__surface">
-          <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
-          <h2 class="mdc-dialog__title" id="my-dialog-title"><!--
-         -->Dialog Title<!--
-       --></h2>
+          <h2 class="mdc-dialog__title" id="my-dialog-title">Server closed.</h2>
           <div class="mdc-dialog__content" id="my-dialog-content">
-            Dialog body text goes here.
+            The Jupyter Notebook server was successfully closed.
           </div>
           <footer class="mdc-dialog__actions">
             <button type="button" onclick="window.close()" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes">
@@ -103,7 +100,7 @@ $(".jm--quit").click(() => {
         "shutdown"
     ), {
         type: "POST",
-        success: console.log("DONE"),
+        success: $(".jm-quit-dialog").get(0).MDCDialog.open(),
         error: (e) => console.error(e)
     });
 })

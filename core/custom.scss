@@ -1,5 +1,12 @@
+$mdc-theme-primary: #3F51B5; // Primary colour
+$mdc-theme-secondary: #f44336; // Secondary colour
+$mdc-theme-background: #5C6BC0; // Background colour
 @import "material-components-web/material-components-web";
 
-body {
-    background-color: red;
+.mdc-tab.mdc-tab--active svg.mdc-tab__icon {
+    fill: $mdc-theme-primary;
+}
+
+.mdc-tab {
+    text-decoration: none;
 }

@@ -1,47 +1,30 @@
 {
-<<<<<<< HEAD
-	"name": "jupyter-material",
-	"version": "0.0.0",
-	"private": true,
-	"main": "core/custom.js",
-	"author": "Richie Bendall <richiebendall@gmail.com>",
-	"license": "MIT",
-	"scripts": {
-		"build:js": "babel core -d dist",
-		"build:css": "node-sass core -o dist"
-	},
-	"devDependencies": {
-		"@babel/cli": "^7.4.3",
-		"@babel/core": "^7.4.3",
-		"@babel/preset-env": "^7.4.3",
-		"node-sass": "^4.11.0"
-	},
-	"dependencies": {
-		"material-components-web": "^1.1.0"
-	}
-=======
-  "name": "jupyter-material",
-  "version": "0.0.0",
-  "private": true,
-  "main": "index.js",
-  "author": "Richie Bendall <richiebendall@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "build": "yarn build:js && yarn build:css",
-    "build:js": "babel core -d dist",
-    "build:css": "node-sass core -o dist --source-map true --include-path node_modules"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.4.3",
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "eslint": "^5.16.0",
-    "eslint-config-google": "^0.12.0",
-    "node-sass": "^4.11.0"
-  },
-  "dependencies": {
-    "jquery": "^3.3.1",
-    "material-components-web": "^1.1.0"
-  }
->>>>>>> c7ba84ec93ef7c86c1caeee669f8bd1233d6ce52
+    "name": "jupyter-material",
+    "version": "0.0.0",
+    "private": true,
+    "main": "index.js",
+    "author": "Richie Bendall <richiebendall@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "yarn build:js && yarn build:css",
+        "build:js": "poi",
+        "build:css": "node-sass core -o dist --source-map true --include-path node_modules"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.3",
+        "@babel/core": "^7.4.3",
+        "@babel/preset-env": "^7.4.3",
+        "eslint": "^5.16.0",
+        "eslint-config-google": "^0.12.0",
+        "node-sass": "^4.11.0",
+        "poi": "^12.5.9",
+        "postcss-import": "^12.0.1",
+        "postcss-url": "^8.0.0",
+        "sass-loader": "^7.1.0"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "material-components-web": "^1.1.0",
+        "url-join": "^4.0.0"
+    }
 }

@@ -1,1 +1,1 @@
-# jupyter-material
+# Jupyter Material

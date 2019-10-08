@@ -1,0 +1,33 @@
+/*-----------------------------------------------------------------------------
+| Copyright (c) Jupyter Development Team.
+| Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/
+
+@import './variables.css';
+@import './urls.css';
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+/* Set the default typography for monospace elements */
+tt,
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-code-font-size);
+  line-height: var(--jp-code-line-height);
+}
+
+.cm-s-jupyter span.cm-keyword {
+  font-weight: unset;
+}
+
+.cm-s-jupyter span.cm-comment {
+    font-style: unset;
+}
+
+.cm-s-jupyter span.cm-operator {
+    font-weight: unset;
+}

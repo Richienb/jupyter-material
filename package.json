@@ -11,7 +11,7 @@
         "build:css": "node-sass core -o dist --source-map true --include-path node_modules"
     },
     "devDependencies": {
-        "@babel/cli": "^7.7.0",
+        "@babel/cli": "^7.7.4",
         "@babel/core": "^7.7.2",
         "@babel/preset-env": "^7.7.4",
         "eslint": "^6.6.0",
